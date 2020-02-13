@@ -54,6 +54,7 @@
 	background-image: url("../assets/ville.png");
 	background-repeat: no-repeat;
 	background-position: top;
+	background-clip: border-box;
 	height: 600px;
 	width: 800px;
 	position: absolute;

@@ -32,37 +32,22 @@ let saloon = $('#saloon')
 
 
 suivant.on("click", function(){
-       if (numDialBox == 0) {
-
-                numDialBox ++ ;
-    }
       if (numDialBox == 1) {
-
-                text.html("Vous devez cliquer sur les différents endroits du saloon pour trouver deux indices qui vous aideront à récuperer votre mémoire");
+                text.html("Vous devez cliquer sur les différents endroits du saloon pour trouver deux indices qui vous aideront à récuperer votre mémoire.");
                 numDialBox ++ ;
     }
-else if (numDialBox == 2) {     
-	dial.css("visibility","hidden");
+      else if (numDialBox == 2) {
+	  dial.css("visibility","hidden");
     charaBox.css('visibility','hidden');
     vie4.css("visibility","visible");
-    fenetre.css("visibility","visible");
-    fenetre1.css("visibility","visible");
-    pancarte.css("visibility","visible");
-    banc.css("visibility","visible");
-    chapeau.css("visibility","visible");
-    escalier.css("visibility","visible");
-    tonneau.css("visibility","visible");
-    cheval.css("visibility","visible");
-    porte.css("visibility","visible");
-    
+  }
 
-
-
+});
 
 
 
 	fenetre.on('click',function(){
-	text.html("Ces fenetres ont pas été lavées depuis quelques temps");
+	text.html("Ces fenetres n'ont pas été lavées depuis quelques temps.");
 	dial.css('visibility','visible');
 	charaBox.css('visibility','visible');
 	charaName.css('visibility','visible');
@@ -72,23 +57,24 @@ else if (numDialBox == 2) {
 });
 
 cheval.on('click',function(){
-	text.html("Ces chevaux sont vraiment magnifiques");
+	text.html("Ces chevaux sont vraiment magnifiques.");
 	dial.css('visibility','visible');
 	charaBox.css('visibility','visible');
 	charaName.css('visibility','visible');
+  cheval.css('visibility','hidden');
 	pv -= 1;
 	updateLife();
 
 });
 
 banc.on('click',function(){
-	text.html("Ce banc n'a pas l'air très solide");
+	text.html("Ce banc n'a pas l'air très solide.");
 	dial.css('visibility','visible');
 	charaBox.css('visibility','visible');
 	charaName.css('visibility','visible');
 	pv -= 1;
 	updateLife();
-	
+
 
 });
 
@@ -100,51 +86,51 @@ porte.on('click',function(){
 	win1 += 1;
 		if (win1 == 2) {
 			updatewin();
-			body.removeClass("saloon");
-              body.addClass("win");
+			saloon.css('visibility','visible');
+      win.css('visibility','visible');
 		}
-	$('.porte').css('display','none');
+	porte.css('display','none');
 
 
 });
 tonneau.on('click',function(){
-	text.html("Ce tonneau est vide");
+	text.html("Ce tonneau est vide.");
 	dial.css('visibility','visible');
 	charaBox.css('visibility','visible');
 	charaName.css('visibility','visible');
 	pv -= 1;
 	updateLife();
-	
+
 
 });
 fenetre1.on('click',function(){
-	text.html("J'arrive pas à voir à travers");
+	text.html("J'arrive pas à voir à travers.");
 	dial.css('visibility','visible');
 	charaBox.css('visibility','visible');
 	charaName.css('visibility','visible');
 	pv -= 1;
 	updateLife();
-	
+
 
 });
 pancarte.on('click',function(){
-	text.html("Meh je crois que c'est un saloon");
+	text.html("Meh je crois que c'est un saloon.");
 	dial.css('visibility','visible');
 	charaBox.css('visibility','visible');
 	charaName.css('visibility','visible');
 	pv -= 1;
 	updateLife();
-	
+
 
 });
 escalier.on('click',function(){
-	text.html("C'est un escalier, rien de plus banal");
+	text.html("C'est un escalier, rien de plus banal.");
 	dial.css('visibility','visible');
 	charaBox.css('visibility','visible');
 	charaName.css('visibility','visible');
 	pv -= 1;
 	updateLife();
-	
+
 
 });
 chapeau.on('click',function(){
@@ -165,7 +151,7 @@ function updateLife(){
 	if (pv == 4) {
 		vie4.css('visibility','visible');
 	}
-	if (pv == 3) {
+	  if (pv == 3) {
 		vie3.css('visibility','visible');
 		vie4.css('visibility','hidden');
 
@@ -175,7 +161,7 @@ function updateLife(){
 	if (pv == 2) {
 		vie2.css('visibility','visible');
 		vie3.css('visibility','hidden');
-	
+
 	}
 
 
@@ -190,7 +176,7 @@ function updateLife(){
 		vie1.css('visibility','hidden');
 		charaName.css('visibility','hidden');
 		charaBox.css('visibility','hidden');
-		text.html("Vous n'avez pas réussi à trouver tous les indices, vous allez passer à la suite de l'histoire");
+		text.html("Vous n'avez pas réussi à trouver tous les indices, vous allez passer à la suite de l'histoire.");
     vie4.css("visibility","hidden");
     fenetre.css("visibility","hidden");
     fenetre1.css("visibility","hidden");
@@ -202,7 +188,7 @@ function updateLife(){
     cheval.css("visibility","hidden");
     porte.css("visibility","hidden");
     saloon.css('visibility','hidden');
-    
+
 		resultat = 2;
 		      numDialBox++
 	}
@@ -226,7 +212,7 @@ function updatewin(){
     tonneau.css("visibility","hidden");
     cheval.css("visibility","hidden");
     porte.css("visibility","hidden");
-    
+
 
 		text.html("Vous avez réussi à trouver les indices, vous allez passer à la suite de l'histoire");
 		resultat = 1;
@@ -234,8 +220,8 @@ function updatewin(){
 	}
 }
 
-  
-       
+
+
        else if (numDialBox == 3) {
 
           if (resultat == 1){
@@ -282,22 +268,3 @@ function updatewin(){
 
           }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          });

@@ -1,14 +1,18 @@
 #corps{
-	width: 800px;
 	height: 600px;
-	background-repeat: no-repeat;
+	width: 800px;
+	border: double black 1px;
+	margin: auto;
 }
 
+
 #saloon{
-		background-image: url("assets/saloon.png");
+		background-image: url("../assets/saloon.png");
 		background-repeat: no-repeat;
-		height: 700px;
-		width: 900px;
+		height: 600px;
+		width: 800px;
+		border: double black 1px;
+		margin: auto;
 		position: absolute;
 		visibility: visible;
 		  z-index: -1;
@@ -21,7 +25,7 @@
   margin-right: 2%;
 }
 .fenetre{
-	opacity: 0.7;
+	opacity: 0;
 	background-image: url("assets/fenetre.jpg");
 	background-repeat: no-repeat;
 	height: 65px;
@@ -29,11 +33,12 @@
 	margin-left: 120px;
 	bottom: 800px;
 	position: absolute;
-	visibility: hidden;
+	visibility: visible;
+	cursor: pointer;
 }
 
 .fenetre1{
-	opacity: 0.7;
+	opacity: 0;
 	background-image: url("assets/fenetre1.jpg");
 	background-repeat: no-repeat;
 	height: 65px;
@@ -41,11 +46,12 @@
 	margin-left: 510px;
 	bottom: 800px;
 	position: absolute;
-		visibility: hidden;
+		visibility: visible;
+		cursor: pointer;
 }
 
 .pancarte{
-	opacity: 0.7;
+	opacity: 0;
 	background-image: url("assets/pancarte.jpg");
 	background-repeat: no-repeat;
 	height: 65px;
@@ -53,12 +59,13 @@
 	margin-left: 295px;
 	bottom: 800px;
 	position: absolute;
-		visibility: hidden;
+		visibility: visible;
+		cursor: pointer;
 
 }
 
 .banc{
-	opacity: 0.7;
+	opacity: 0;
 	background-image: url("assets/banc.jpg");
 	background-repeat: no-repeat;
 	height: 65px;
@@ -66,12 +73,13 @@
 	margin-left: 80px;
 	top:275px;
 	position: absolute;
-		visibility: hidden;
-	
-	
+		visibility: visible;
+		cursor: pointer;
+
+
 }
 .cheval{
-	opacity: 0.7;
+	opacity: 0;
 	background-image: url("assets/cheval.jpg");
 	background-repeat: no-repeat;
 	height: 200px;
@@ -79,12 +87,13 @@
 	bottom:340px;
 	left: 33px;
 	position: absolute;
-		visibility: hidden;
+		visibility: visible;
+		cursor: pointer;
 
-	
+
 }
 .cheval{
-	opacity: 0.7;
+	opacity: 0;
 	background-image: url("assets/cheval.jpg");
 	background-repeat: no-repeat;
 	height: 250px;
@@ -92,13 +101,14 @@
 	top:320px;
 	margin-left: 555px;
 	position: absolute;
-		visibility: hidden;
+		visibility: visible;
+		cursor: pointer;
 
-	
+
 }
 
 .porte{
-	opacity: 0.7;
+	opacity: 0;
 	background-image: url("assets/porte.jpg");
 	background-repeat: no-repeat;
 	height: 80px;
@@ -106,13 +116,14 @@
 	margin-left: 305px;
 	top:265px;
 	position: absolute;
-		visibility: hidden;
-	
+		visibility: visible;
+		cursor: pointer;
+
 }
 
 
 .tonneau{
-	opacity: 0.7;
+	opacity: 0;
 	background-image: url("assets/tonneau.jpg");
 	background-repeat: no-repeat;
 	height: 85px;
@@ -120,35 +131,38 @@
 	top:280px;
 	left: 460px;
 	position: absolute;
-		visibility: hidden;
+		visibility: visible;
+		cursor: pointer;
 
-	
+
 }
 .escalier{
-	opacity: 0.7;
+	opacity: 0.5;
 	background-image: url("assets/escalier.jpg");
 	background-repeat: no-repeat;
-	height: 90px;
-	width: 170px;
-	top:395px;
-	margin-left: 280px;
+	height: 70px;
+	width: 160px;
+	margin-left: 300px;
+	margin-top: 430px;
 	position: absolute;
-		visibility: hidden;
+		visibility: visible;
+		cursor: pointer;
 
-	
+
 }
 .chapeau{
-	opacity: 0.7;
+	opacity: 0;
 	background-image: url("assets/chapeau.jpg");
 	background-repeat: no-repeat;
 	height: 50px;
 	width: 50px;
-	margin-top:260px;
-	margin-left: 230px;
+	margin-top:285px;
+	margin-left: 245px;
 	position: absolute;
-		visibility: hidden;
+		visibility: visible;
+		cursor: pointer;
 
-	
+
 }
 .vie4{
 	background-image: url("assets/vie4.png");
@@ -156,9 +170,9 @@
 	height: 100px;
 	width: 300px;
 	margin-top:20px;
-	left: 700px;
 	position: absolute;
 	visibility: hidden;
+	margin-left: 550px;
 }
 .vie3{
 	background-image: url("assets/vie3.png");
@@ -169,6 +183,7 @@
 	left: 700px;
 	position: absolute;
 	visibility: hidden;
+	margin-left: 250px;
 }
 .vie2{
 	background-image: url("assets/vie2.png");
@@ -179,6 +194,7 @@
 	left: 700px;
 	position: absolute;
 	visibility: hidden;
+	margin-left: 250px;
 }
 .vie1{
 	background-image: url("assets/vie1.png");
@@ -189,63 +205,63 @@
 	left: 700px;
 	position: absolute;
 	visibility: hidden;
+	margin-left: 250px;
 }
 .incorrect{
 	background-image: url("assets/incorrect.png");
 	background-repeat: no-repeat;
-	height: 1000px;
-	width: 1000px;
+	height: 600px;
+	width: 800px;
+	border: double black 1px;
+	margin: auto;
 	position: absolute;
 	visibility: hidden;
 }
 .win{
 	background-image: url("assets/win.png");
 	background-repeat: no-repeat;
-	height: 1000px;
-	width: 1000px;
+	height: 600px;
+	width: 800px;
+	border: double black 1px;
+	margin: auto;
 	position: absolute;
 	visibility: hidden;
 }
 
 
 .dial{
-
-  
   border: 5px double black;
-  margin-top: 470px;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
   background-color: white;
-  opacity: 0.6;
+  opacity: 0.7;
+  visibility: visible;
   font-family: fantasy;
   font-size: 20px;
   width: auto;
   height: auto;
   display: flex;
-  vertical-align: middle;
-  position: absolute;
-  margin-right: 210px;	
+  z-index: -1;
 }
 
 #charaBox{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;	
   visibility: hidden;
-  bottom:500px;
+  opacity: 0.7;
 }
-
 
 .charaName{
   border: 5px double black;
   background-color: white;
-  opacity: 0.6;
-  margin-top: 600px;
+  opacity: 0.4;
+  margin-top: 350px;
+  visibility: hidden;
   font-family: fantasy;
   font-size: 20px;
   width: 200px;
   height: 40px;
-  position: absolute;
 }
-
-
-

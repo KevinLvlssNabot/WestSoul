@@ -135,16 +135,18 @@ tonneau.on('click',function(){
 	dial.css('visibility','visible');
 	charaBox.css('visibility','visible');
 	charaName.css('visibility','visible');
+  tonneau.css('visibility','hidden');
 	pv -= 1;
 	updateLife();
 
 
 });
 fenetre1.on('click',function(){
-	text.html("J'arrive pas à voir à travers.");
+	text.html("Je n'arrive pas à voir à travers d'ici.");
 	dial.css('visibility','visible');
 	charaBox.css('visibility','visible');
 	charaName.css('visibility','visible');
+  fenetre1.css('visibility','hidden');
 	pv -= 1;
 	updateLife();
 
@@ -155,6 +157,7 @@ pancarte.on('click',function(){
 	dial.css('visibility','visible');
 	charaBox.css('visibility','visible');
 	charaName.css('visibility','visible');
+  pancarte.css('visibility','hidden');
 	pv -= 1;
 	updateLife();
 

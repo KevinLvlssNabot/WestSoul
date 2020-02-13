@@ -1,0 +1,79 @@
+body{
+  width: 800px;
+  height: 600px;
+  border-style: solid;
+  border-width: thin;
+  margin: auto;
+}
+
+.saloonint{
+  background-image: url("assets/saloonint.png");
+  background-size: 800px 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin: auto;
+}
+
+
+
+.dialBox{
+  border: 5px double black;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  background-color: white;
+  opacity: 0.6;
+  visibility: visible;
+  font-family: fantasy;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  z-index: -1;
+}
+
+.charaName{
+  border: 5px double black;
+  background-color: white;
+  opacity: 0.6;
+  margin-top: 350px;
+  visibility: hidden;
+  font-family: fantasy;
+  font-size: 20px;
+  width: 200px;
+  height: 40px;
+}
+
+#charaBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+
+#suivant{
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: 2%;
+}
+
+#rose{
+  background-image: url("assets/rose.png");
+  height: 420px;
+  width: 420px;
+  position: absolute;
+  margin-top: 100px;
+  visibility: hidden;
+}
+#tom{
+  background-image: url("assets/tom.png");
+  height: 420px;
+  width: 420px;
+  position: absolute;
+  margin-top: 100px;
+  visibility: hidden;
+}

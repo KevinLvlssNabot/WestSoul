@@ -99,10 +99,12 @@
 
 #sprite1{
   background-image: url("../assets/fille_joie.png");
+	background-repeat: no-repeat;
   height: 420px;
   width: 420px;
   position: absolute;
   margin-top: 100px;
+	margin-left: 500px;
   visibility: hidden;
 }
 

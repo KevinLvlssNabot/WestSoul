@@ -104,7 +104,7 @@ suivant.on("click", function(){
 
               dialBox.css("visibility","visible");
               charaBox.css("visibility","visible");
-              sprite1.css("visibility","hidden");
+              sprite1.css("visibility","visible");
               text.html("Ca fait un moment que le saloon n’ouvre plus. Je perd mes bonnes habitudes, moi, avec ça.");
               numDialBox++
           }

@@ -13,6 +13,17 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   margin: auto;
+  visibility: visible;
+  position: absolute;
+}
+
+#miroir{
+  background-image: url("../assets/miroir.png");
+  height: 600px;
+  width: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
   visibility: hidden;
   position: absolute;
 }
@@ -66,12 +77,24 @@ body{
 }
 
 #sprite1{
-  background-image: url("assets/inori.png");
+  background-image: url("../assets/femme_souriante_fini.png");
+  background-repeat: no-repeat;
   height: 420px;
   width: 420px;
   position: absolute;
   margin-top: 100px;
-  visibility: hidden;
+  visibility: visible;
+}
+
+#sprite2{
+  background-image: url("../assets/petite_fini_bebe.png");
+  background-repeat: no-repeat;
+  height: 420px;
+  width: 420px;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 300px;
+  visibility: visible;
 }
 
 #next{

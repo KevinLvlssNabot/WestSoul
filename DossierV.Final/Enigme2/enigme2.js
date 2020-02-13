@@ -33,7 +33,7 @@ let next = $('#next')
     b.on("click", function(){
           window.alert("Vous avez perdu.");
        resultat = 2;
-      numDialBox++; 
+      numDialBox++;
       suivant.css('visibility','visible');
       a.css('visibility','hidden');
       b.css('visibility','hidden');
@@ -55,7 +55,7 @@ let next = $('#next')
     d.on("click", function(){
           window.alert("Vous avez perdu.");
       resultat = 2;
-      numDialBox++; 
+      numDialBox++;
       suivant.css('visibility','visible');
       a.css('visibility','hidden');
       b.css('visibility','hidden');
@@ -74,7 +74,7 @@ suivant.on("click", function(){
           chrono.css('visibility','visible');
           decompte = setInterval(timer, 1000);
       }
-     
+
        else if (numDialBox == 2) {
 
           if (resultat == 1){
@@ -119,7 +119,7 @@ suivant.on("click", function(){
               next.css('visibility','visible');
               suivant.css('visibility','hidden');
           }
-          
+
         }
 
 

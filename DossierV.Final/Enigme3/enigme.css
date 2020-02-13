@@ -1,0 +1,251 @@
+#corps{
+	width: 800px;
+	height: 600px;
+	background-repeat: no-repeat;
+}
+
+#saloon{
+		background-image: url("assets/saloon.png");
+		background-repeat: no-repeat;
+		height: 700px;
+		width: 900px;
+		position: absolute;
+		visibility: visible;
+		  z-index: -1;
+}
+
+
+#suivant{
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: 2%;
+}
+.fenetre{
+	opacity: 0.7;
+	background-image: url("assets/fenetre.jpg");
+	background-repeat: no-repeat;
+	height: 65px;
+	width: 120px;
+	margin-left: 120px;
+	bottom: 800px;
+	position: absolute;
+	visibility: hidden;
+}
+
+.fenetre1{
+	opacity: 0.7;
+	background-image: url("assets/fenetre1.jpg");
+	background-repeat: no-repeat;
+	height: 65px;
+	width: 120px;
+	margin-left: 510px;
+	bottom: 800px;
+	position: absolute;
+		visibility: hidden;
+}
+
+.pancarte{
+	opacity: 0.7;
+	background-image: url("assets/pancarte.jpg");
+	background-repeat: no-repeat;
+	height: 65px;
+	width: 150px;
+	margin-left: 295px;
+	bottom: 800px;
+	position: absolute;
+		visibility: hidden;
+
+}
+
+.banc{
+	opacity: 0.7;
+	background-image: url("assets/banc.jpg");
+	background-repeat: no-repeat;
+	height: 65px;
+	width: 100px;
+	margin-left: 80px;
+	top:275px;
+	position: absolute;
+		visibility: hidden;
+	
+	
+}
+.cheval{
+	opacity: 0.7;
+	background-image: url("assets/cheval.jpg");
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 300px;
+	bottom:340px;
+	left: 33px;
+	position: absolute;
+		visibility: hidden;
+
+	
+}
+.cheval{
+	opacity: 0.7;
+	background-image: url("assets/cheval.jpg");
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 250px;
+	top:320px;
+	margin-left: 555px;
+	position: absolute;
+		visibility: hidden;
+
+	
+}
+
+.porte{
+	opacity: 0.7;
+	background-image: url("assets/porte.jpg");
+	background-repeat: no-repeat;
+	height: 80px;
+	width: 135px;
+	margin-left: 305px;
+	top:265px;
+	position: absolute;
+		visibility: hidden;
+	
+}
+
+
+.tonneau{
+	opacity: 0.7;
+	background-image: url("assets/tonneau.jpg");
+	background-repeat: no-repeat;
+	height: 85px;
+	width: 70px;
+	top:280px;
+	left: 460px;
+	position: absolute;
+		visibility: hidden;
+
+	
+}
+.escalier{
+	opacity: 0.7;
+	background-image: url("assets/escalier.jpg");
+	background-repeat: no-repeat;
+	height: 90px;
+	width: 170px;
+	top:395px;
+	margin-left: 280px;
+	position: absolute;
+		visibility: hidden;
+
+	
+}
+.chapeau{
+	opacity: 0.7;
+	background-image: url("assets/chapeau.jpg");
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 50px;
+	margin-top:260px;
+	margin-left: 230px;
+	position: absolute;
+		visibility: hidden;
+
+	
+}
+.vie4{
+	background-image: url("assets/vie4.png");
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 300px;
+	margin-top:20px;
+	left: 700px;
+	position: absolute;
+	visibility: hidden;
+}
+.vie3{
+	background-image: url("assets/vie3.png");
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 300px;
+	margin-top:20px;
+	left: 700px;
+	position: absolute;
+	visibility: hidden;
+}
+.vie2{
+	background-image: url("assets/vie2.png");
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 300px;
+	margin-top:20px;
+	left: 700px;
+	position: absolute;
+	visibility: hidden;
+}
+.vie1{
+	background-image: url("assets/vie1.png");
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 300px;
+	margin-top:20px;
+	left: 700px;
+	position: absolute;
+	visibility: hidden;
+}
+.incorrect{
+	background-image: url("assets/incorrect.png");
+	background-repeat: no-repeat;
+	height: 1000px;
+	width: 1000px;
+	position: absolute;
+	visibility: hidden;
+}
+.win{
+	background-image: url("assets/win.png");
+	background-repeat: no-repeat;
+	height: 1000px;
+	width: 1000px;
+	position: absolute;
+	visibility: hidden;
+}
+
+
+.dial{
+
+  
+  border: 5px double black;
+  margin-top: 470px;
+  background-color: white;
+  opacity: 0.6;
+  font-family: fantasy;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  display: flex;
+  vertical-align: middle;
+  position: absolute;
+  margin-right: 210px;	
+}
+
+#charaBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;	
+  visibility: hidden;
+  bottom:500px;
+}
+
+
+.charaName{
+  border: 5px double black;
+  background-color: white;
+  opacity: 0.6;
+  margin-top: 600px;
+  font-family: fantasy;
+  font-size: 20px;
+  width: 200px;
+  height: 40px;
+  position: absolute;
+}
+
+
+

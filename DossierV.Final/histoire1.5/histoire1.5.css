@@ -82,7 +82,7 @@ body{
   height: 420px;
   width: 420px;
   position: absolute;
-  margin-top: 100px;
+  margin-top: 175px;
   visibility: visible;
 }
 
@@ -94,6 +94,17 @@ body{
   position: absolute;
   margin-top: 300px;
   margin-left: 300px;
+  visibility: visible;
+}
+
+#sprite3{
+  background-image: url("../assets/homme_joie.png");
+  background-repeat: no-repeat;
+  height: 420px;
+  width: 420px;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 500px;
   visibility: visible;
 }
 

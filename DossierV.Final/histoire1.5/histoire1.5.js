@@ -8,6 +8,7 @@ let chambre = $('#chambre')
 let next = $('#next')
 let sprite1 = $('#sprite1')
 let sprite2 = $('#sprite2')
+let sprite3 = $('#sprite3')
 let miroir = $('#miroir')
 
 suivant.on("click", function(){
@@ -24,6 +25,7 @@ suivant.on("click", function(){
           charaBox.css('visibility','hidden');
           sprite1.css('visibility','hidden');
           sprite2.css('visibility','hidden');
+          sprite3.css('visibility','hidden');
           text.html("Vous vous regarder dans le miroir et vous vous apercez que votre corps n'est plus, vous comprenez que vous êtes décédé, mais vous ne savez pas pourquoi ni comment.");
           miroir.css('visibility','visible');
           numDialBox++;

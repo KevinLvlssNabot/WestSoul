@@ -7,15 +7,25 @@ body{
 }
 
 .saloonint{
-  background-image: url("assets/saloonint.png");
-  background-size: 800px 600px;
+  background-image: url("../assets/saloon_interieur.png");
+  width: 800px;
+  height: 600px;
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
   margin: auto;
+  position: absolute;
 }
 
-
+#cartes{
+  background-image: url("../assets/cartes.png");
+  width: 800px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  position: absolute;
+  visibility: hidden;
+}
 
 .dialBox{
   border: 5px double black;
@@ -62,18 +72,53 @@ body{
 }
 
 #rose{
-  background-image: url("assets/rose.png");
+  background-image: url("../assets/femme_souriante_fini.png");
   height: 420px;
   width: 420px;
   position: absolute;
   margin-top: 100px;
   visibility: hidden;
+  background-repeat: no-repeat;
 }
 #tom{
-  background-image: url("assets/tom.png");
+  background-image: url("../assets/homme_neutre_fini.png");
   height: 420px;
   width: 420px;
   position: absolute;
   margin-top: 100px;
+  margin-left: 600px;
   visibility: hidden;
+  background-repeat: no-repeat;
+}
+
+#plateau{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 50px;
+  visibility: hidden;
+  position: absolute;
+}
+
+.cartesjouables{
+  background-image: url("../assets/cartesjouables.png");
+  width: 77px;
+  height: 111px;
+  padding: 10px;
+  background-repeat: no-repeat;
+  display: inline-flex;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#next{
+	position: absolute;
+	margin-top: 0px;
+  margin-left: 700px;
+	height: 50px;
+	width: 100px;
+	font-size: 10px;
+	font-style: italic;
+	visibility: hidden;
 }

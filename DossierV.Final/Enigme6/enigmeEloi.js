@@ -12,17 +12,35 @@ let next = $('#next')
 let steleI = $('#steleI')
 let steleNI = $('#steleNI')
 let defaite = 0
+let eglise = $('#eglise')
+let cimetiere = $('#cimetiere')
+let tombe = $('#tombe')
+
 // $.session.get('nbreVictoire');
 
 
 
 suivant.on('click', function(){
-  dialBox.css('visibility','hidden');
-  valider.css('visibility','visible');
-  input.css('visibility','visible');
-  chrono.css('visibility','visible');
-  decompte = setInterval(timer, 1000);
-      if (page == 1) {
+  if (page == 0) {
+    cimetiere.css('visibility','visible');
+    eglise.css('visibility','hidden');
+    text.html('Vous vous rapprochez et apercevez une tombe qui vous semble familière.');
+  } else if (page == 1){
+    cimetiere.css('visibility','hidden');
+    tombe.css('visibility','visible');
+    text.html("Il s'agit en effet d'une tombe avec votre nom gravé sur sa surface, mais un détail vous dérange et vous décidez d'en faire le tour.");
+  }
+
+  else if (page == 2) {
+    text.html("Il y a une inscription qui paraît codeée. Peut-être devriez-vous essayer de déchiffrer ce message numérique.");
+    steleNI.css('visibility','visible');
+    valider.css('visibility','visible');
+    input.css('visibility','visible');
+    chrono.css('visibility','visible');
+    decompte = setInterval(timer, 1000);
+  }
+
+    else if (page == 3) {
             if (defaite == 1) {
               text.html("Vous fixez votre pierre tombale encore trop lisse, vos pensées se perdent dans la mélancolie.");
             } else {
@@ -32,7 +50,7 @@ suivant.on('click', function(){
         input.css('visibility','hidden');
         dialBox.css('visibility','visible');
         clearInterval(decompte);
-      } else if (page == 2) {
+      } else if (page == 4) {
           if (defaite == 1) {
           text.html("Pour finalement laisser place à la colère lorsque votre regard se pose sur un mot gribouillé hâtivement sur cette pierre : “VOLEUR”.");
         } else {
@@ -42,7 +60,7 @@ suivant.on('click', function(){
         input.css('visibility','hidden');
         dialBox.css('visibility','visible');
         clearInterval(decompte);
-      } else if (page == 3) {
+      } else if (page == 5) {
         valider.css('visibility','hidden');
         input.css('visibility','hidden');
         dialBox.css('visibility','visible');
@@ -52,7 +70,7 @@ suivant.on('click', function(){
         } else {
           text.html("Vous parvenez à reprendre vos esprits et continuer vos recherches dans la banque de la ville, espérant naïvement que ce souvenir des plus déplorables était erroné.");
         }
-      } else if (page == 4) {
+      } else if (page == 6) {
         valider.css('visibility','hidden');
         input.css('visibility','hidden');
         dialBox.css('visibility','hidden');
@@ -67,7 +85,7 @@ valider.on('click',function(){
   let reponse = $('#input').val();
     if (reponse == suite)
     {
-    window.alert("Bien joué, vous avez retrouver le code caché.");
+    window.alert("Bien joué, vous avez retrouvé le code caché.");
   //  nbreVictoire = nbreVictoire++;
     dialBox.css('visibility','visible');
     text.html("Un souvenir vous revient, vous vous revoyez un colt à la main, pointant le visage apeuré d'un inconnu.");

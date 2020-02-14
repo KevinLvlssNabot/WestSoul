@@ -53,6 +53,7 @@
 	height: 500px;
 	width: 500px;
 	position: absolute;
+	visibility: hidden;
 }
 
 #steleI{
@@ -87,12 +88,14 @@
 	margin-left: 500px;
 	position: absolute;
 	visibility: hidden;
+	color: white;
 }
 
 #chrono{
 	margin-left: 700px;
 	position: absolute;
 	visibility: hidden;
+	color: white;
 }
 
 #next{
@@ -103,5 +106,37 @@
 	width: 100px;
 	font-size: 10px;
 	font-style: italic;
+	visibility: hidden;
+}
+
+#eglise{
+  background-image: url("../assets/eec.png");
+  width: 800px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  position: absolute;
+}
+
+#cimetiere{
+  background-image: url("../assets/cimetiere.png");
+  width: 800px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  position: absolute;
+	visibility: hidden;
+}
+
+#tombe{
+  background-image: url("../assets/tombe.png");
+  width: 800px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  position: absolute;
 	visibility: hidden;
 }

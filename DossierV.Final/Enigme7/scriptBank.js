@@ -1,4 +1,4 @@
-
+let montant = 31000
 
 /*--------------------AFFICHE1--------------------*/
 $('.wanted1').on('click', function(){
@@ -30,10 +30,13 @@ $('.wanted4').on('click', function(){
 
 /*--------------------REGISTRE--------------------*/
 $('.registre').on('click', function(){
+	window.alert('Retrouvez le montant du criminel le plus recherché - celui mois ayant le plus rapporté à la banque.')
 	$(".registreZoom1873").css('visibility','visible')
 	$('.close').css('visibility','visible')
 	$('.droite').css('visibility','visible')
 	$('.gauche').css('visibility','visible')
+	$('#input').css('visibility','visible')
+	$('#valider').css('visibility','visible')
 
 });
 
@@ -62,4 +65,13 @@ $('.close').on('click', function(){
 	$(".registreZoom1873").css('visibility','hidden')
 	$(".registreZoom1874").css('visibility','hidden')
 
+});
+
+
+$('#valider').on('click',function(){
+let reponse = $('#input').val();
+	if (reponse == montant)
+	{
+	window.alert("Bien joué, vous avez retrouvé le code caché. Vous pouvez appuyer sur la prochaine scène.");
+}
 });

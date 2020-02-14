@@ -1,0 +1,100 @@
+#corps{
+	height: 600px;
+	width: 800px;
+	border: double black 1px;
+	margin: auto;
+}
+
+#bank{
+  background-image: url("../assets/bank.png");
+  width: 800px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  position: absolute;
+  visibility: visible;
+}
+
+#prison{
+  background-image: url("../assets/prison.png");
+  width: 800px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  position: absolute;
+  visibility: hidden;
+  }
+#sherifext{
+  background-image: url("../assets/sherifext.png");
+  width: 800px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  position: absolute;
+  visibility: hidden;
+  }
+#sherifint{
+  background-image: url("../assets/sherifint.png");
+  width: 800px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  position: absolute;
+  visibility: hidden;
+  }
+
+.dialBox{
+  border: 5px double black;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  background-color: white;
+  opacity: 0.4;
+  visibility: visible;
+  font-family: fantasy;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  display: flex;
+  z-index: -1;
+}
+
+.charaName{
+  border: 5px double black;
+  background-color: white;
+  opacity: 0.4;
+  margin-top: 350px;
+  visibility: hidden;
+  font-family: fantasy;
+  font-size: 20px;
+  width: 200px;
+  height: 40px;
+}
+
+#charaBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+
+#suivant{
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: 2%;
+}
+
+#sherif{
+  background-image: url("../assets/sherif.png");
+  height: 420px;
+  width: 420px;
+  position: absolute;
+  margin-top: 100px;
+  visibility: hidden;
+}

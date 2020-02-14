@@ -21,6 +21,7 @@ let chrono = $('#chrono')
 let numChrono = 120
 let decompte = null
 let next = $('#next')
+let fille = $('#fille')
 
 // $.session.get('nbreVictoire');
 
@@ -29,11 +30,13 @@ tentatives.html(numTentatives);
 
 
 suivant.on('click', function(){
-  dialBox.css("visibility","hidden");
-  feuille1.css('visibility','visible');
-    if (epreuve == 1) {
-      feuille1.css('visibility','hidden');
-    } else if (epreuve == 2){
+  epreuve++;
+  if (epreuve == 1) {
+    feuille1.css('visibility','visible');
+    suivant.css('visibility','hidden');
+    text.html('Vous retrouvez un morceau de papier déchiré et taché sur lequel se trouve une phrase. A moitié effacé, vous vous demandez ce qui peut bien être écrit dessus.');
+  }
+    else if (epreuve == 2){
       feuille1.css('visibility','hidden');
       dialBox.css("visibility","visible");
       valider.css("visibility","visible");
@@ -41,13 +44,14 @@ suivant.on('click', function(){
       tentatives.css('visibility','visible');
       chrono.css('visibility','visible');
       decompte = setInterval(timer, 1000);
+
     } else if (epreuve == 3) {
       next.css('visibility','visible');
       feuille1.css('visibility','hidden');
       dialBox.css("visibility","hidden");
       suivant.css('visibility','hidden');
+
     }
-    epreuve++;
     tentatives.html(numTentatives);
 });
 
@@ -111,6 +115,7 @@ valider.on('click',function(){
     window.alert("Bien joué, vous avez retrouver le mot effacé.");
   //  nbreVictoire = nbreVictoire++;
     text.html("Un souvenir vous revient, vous apercevez votre fille, sur le dos d'un poney, ses joues sont couvertes d'hématomes mais un sublime sourire décore son visage. Cependant, cela ne vous permet de répondre à toutes vos questions et vous décidez de chercher d'autres indices vers l'église.");
+    fille.css("visibility","visible");
     valider.css("visibility","hidden");
     input.css('visibility','hidden');
     clearInterval(decompte);
@@ -140,6 +145,3 @@ function timer(){
     text.html("Ce ranch ne vous dit rien, vous n'êtes peut-être même jamais venu ici. Vous décidez de chercher des réponses vers l'église.");
 	}
 }
-
-
-$.session.set('nbreVictoire','nbreVictoire');
